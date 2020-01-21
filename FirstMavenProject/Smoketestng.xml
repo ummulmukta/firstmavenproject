@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteSmoke">
+  <test thread-count="5" name="TestSmoke">
+    <classes>
+      <class name="com.utility.Listenermailclass"/>
+      <class name="com.common.CrosBrowserTestindExpedia"/>
+      <class name=".CrossBrowserImplement"/>
+      <class name="com.common.Pracctticce"/>
+    </classes>
+  </test> <!-- TestSmoke -->
+</suite> <!-- SuiteSmoke -->

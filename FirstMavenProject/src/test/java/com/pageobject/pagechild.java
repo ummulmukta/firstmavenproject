@@ -13,6 +13,15 @@ public class pagechild extends DropPage {
 @FindBy(xpath="//input[@id='u_0_r']")
 	WebElement a;
 public WebElement getA() {
+	String s=a.toString();
+	String[]ss=s.split("");
+	
+	
+	
+	
+	 
+	
+	
 	return a;
 }
 	

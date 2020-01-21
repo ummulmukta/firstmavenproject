@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.common.CrosBrowserTestindExpedia">
+      <class name="com.testngpractice.TestngPractice">
         <methods>
-          <include name="ss"/>
+          <include name="testTWo"/>
+          <include name="end"/>
+          <include name="getDriver"/>
         </methods>
-      </class> <!-- com.common.CrosBrowserTestindExpedia -->
+      </class> <!-- com.testngpractice.TestngPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

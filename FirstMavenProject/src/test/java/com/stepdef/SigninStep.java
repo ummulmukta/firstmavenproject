@@ -27,6 +27,7 @@ public class SigninStep extends Base {
 	  // driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")).click();
 	   //driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")).submit();
 	   //driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")).click();
+		
 		k.getA();
 	}
 
