@@ -15,4 +15,7 @@ public static void sc(WebDriver driver,String s) throws IOException {
 	FileUtils.copyFile(f,new File(s+".png"));
 	
 }
+public void gittest() {
+	System.out.println();
+}
 }
