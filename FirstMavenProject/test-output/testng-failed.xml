@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="geckotest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.testngpractice.TestngPractice">
+      <class name="com.common.CrosBrowsserBase">
         <methods>
-          <include name="testTWo"/>
-          <include name="end"/>
-          <include name="getDriver"/>
+          <include name="getBrowser" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.testngpractice.TestngPractice -->
+      </class> <!-- com.common.CrosBrowsserBase -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- geckotest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

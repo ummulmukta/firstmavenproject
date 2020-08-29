@@ -14,7 +14,7 @@ public class Iframee {
 
 	public static void main(String[] args) {
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./Drivver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./BrowserDriver/chromedriver.exe");
 		driver = new ChromeDriver();
 
 		driver.get("https://www.jqueryui.com");
@@ -29,8 +29,8 @@ public class Iframee {
 		driver.switchTo().frame(driver.findElement(By.className("demo-frame")));
 		Actions ac=new Actions(driver);
 		ac.sendKeys(Keys.chord(Keys.ALT,Keys.CONTROL));
-		ac.
-		ac.sendKeys(Keys);
+		
+		
 		ac.moveToElement(driver.findElement(By.xpath("//input[@id='checkbox-1']"))).click().build().perform();
 		/*
 		 * WebElement c=driver.findElement(By.xpath("//input[@id='checkbox-1']"));
