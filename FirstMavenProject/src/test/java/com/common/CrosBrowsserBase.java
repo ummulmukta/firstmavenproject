@@ -10,6 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -19,7 +23,7 @@ public class CrosBrowsserBase {
 	 
 	@Test(groups={"testone"}) 
 	@Parameters("browser")
-	
+	@BeforeMethod
 	public void getBrowser(String BrowserName) {
 		if (BrowserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./BrowserDriver/chromedriver.exe");
@@ -37,18 +41,29 @@ public class CrosBrowsserBase {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		
+		 // Select s=new Select(driver.findElement(By.xpath("//select[@id='searchDropdownBox']")));
+		 // s.selectByVisibleText("Amazon Fresh"); List<WebElement>list=s.getOptions();
+		  //System.out.println(list.size());
+		 
+//driver.quit();
+
+		
+	}
+	@Test
+	public void actualtest() {
 		  Select s=new Select(driver.findElement(By.xpath("//select[@id='searchDropdownBox']")));
 		  s.selectByVisibleText("Amazon Fresh"); List<WebElement>list=s.getOptions();
 		  System.out.println(list.size());
-		 
-driver.quit();
-
-		
 	}
 	
 	@Test(groups="test2")
 	public void testt() {
+		System.out.println(driver.getTitle());
 		System.out.println("testing purpose");
+	}
+	@AfterMethod
+	public void teardown() {
+		driver.quit();
 	}
 	
 	

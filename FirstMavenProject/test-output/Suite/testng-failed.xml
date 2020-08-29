@@ -6,7 +6,9 @@
     <classes>
       <class name="com.common.CrosBrowsserBase">
         <methods>
-          <include name="getBrowser" invocation-numbers="0"/>
+          <include name="actualtest"/>
+          <include name="teardown"/>
+          <include name="getBrowser"/>
         </methods>
       </class> <!-- com.common.CrosBrowsserBase -->
     </classes>
