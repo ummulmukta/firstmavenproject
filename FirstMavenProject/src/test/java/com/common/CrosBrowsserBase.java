@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 public class CrosBrowsserBase {
 	public WebDriver driver;
 	 
-	@Test(groups="testone") 
+	@Test(groups={"testone"}) 
 	@Parameters("browser")
 	
 	public void getBrowser(String BrowserName) {
